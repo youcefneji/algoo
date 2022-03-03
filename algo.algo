@@ -1,0 +1,23 @@
+ALGORITHM checkpoint algo
+VAR
+    nbC : Integer := 0
+    nbW : Integer := 1
+    nbV : Integer := 0
+    C : Char
+BEGIN
+    read(C)
+WHILE (C <> ".") DO
+    nbC = nbC+1
+IF (C in ["A","O","E","I","Y","U","a","o","e","i","y","u"] THEN
+    nbV = nbV+1
+ELSE IF ( C =" ") THEN
+    nbW = nbW+1 
+    
+END_IF
+END_WHILE
+
+ write (nbC)
+ write (nbW)
+ write (nbV)
+
+END
